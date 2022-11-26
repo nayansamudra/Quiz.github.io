@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0"> -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Required meta tags -->
+  <!-- <meta name="google-signin-client_id" content="256759331803-sfjlu7hdaia8jtfuqojpifnjgjacsekn.apps.googleusercontent.com"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- bootstrap 4.3.1 -->
+  <link rel="stylesheet" href="https:tcistudents.com/css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/vertical_timeline.css">
+  <link rel="stylesheet" href="https:tcistudents.com/css/styles.css">
+  <link rel="stylesheet" href="https:tcistudents.com/css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- simplebar styles -->
+  <link rel="stylesheet" href="https:tcistudents.com/css/vendor/simplebar.css">
+  <!-- Font-Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico">
+  <!-- Include Quill stylesheet -->
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <link href="https://cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
+  <!-- Include the Quill library -->
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  <script src="/node_modules/quill-video-resize-module/video-resize.min.js"></script>
+  <!-- Bootstrap CSS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <title>TCI - Community</title>
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader">
+    <!-- PAGE LOADER DECORATION -->
+    <div class="page-loader-decoration">
+      <!-- ICON LOGO -->
+      <img src="./img/tci_white.png" height="50" width="50">
+      <!-- /ICON LOGO -->
+    </div>
+    <!-- /PAGE LOADER DECORATION -->
+
+    <!-- PAGE LOADER INFO -->
+    <div class="page-loader-info">
+      <!-- PAGE LOADER INFO TITLE -->
+      <p class="page-loader-info-title">TCI Students</p>
+      <!-- /PAGE LOADER INFO TITLE -->
+
+      <!-- PAGE LOADER INFO TEXT -->
+      <p class="page-loader-info-text">Loading...</p>
+      <!-- /PAGE LOADER INFO TEXT -->
+    </div>
+    <!-- /PAGE LOADER INFO -->
+
+    <!-- PAGE LOADER INDICATOR -->
+    <div class="page-loader-indicator loader-bars">
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+    </div>
+    <!-- /PAGE LOADER INDICATOR -->
+  </div>
+  <!-- /PAGE LOADER -->
+
+  <!-- NAVIGATION WIDGET -->
+  <nav id="navigation-widget-small" class="navigation-widget navigation-widget-desktop closed sidebar left delayed">
+    <!-- USER AVATAR -->
+    <a class="user-avatar small no-outline online" href="javascript:;">
+      <!-- USER AVATAR CONTENT -->
+      <div class="user-avatar-content">
+        <!-- HEXAGON -->
+        <img class="avatar_small" id="avatar_small" src="">
+        <!-- /HEXAGON -->
+      </div>
+      <!-- /USER AVATAR CONTENT -->
+
+
+    </a>
+    <!-- /USER AVATAR -->
+
+    <!-- MENU -->
+    <ul class="menu small">
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="./message-center" data-title="Message Center">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-newsfeed">
+            <use xlink:href="#svg-newsfeed"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <a class="menu-item-link text-tooltip-tfr" href="./community" data-title="Community">
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-forums"></use>
+          </svg>
+        </a>
+      </li>
+
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="./my-posts" data-title="My Posts">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-group"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item active">
+        <a class="menu-item-link text-tooltip-tfr" href="./support" data-title="Support Portal">
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-ticket"></use>
+          </svg>
+        </a>
+      </li>
+
+
+      <!-- MENU ITEM -->
+      <li class="menu-item upgrade-icon">
+        <a class="menu-item-link text-tooltip-tfr" href="./upgrade" data-title="Upgrade">
+          <svg class="menu-item-link-icon icon-overview">
+            <use xlink:href="#svg-item"></use>
+          </svg>
+        </a>
+      </li>
+      <!-- /MENU ITEM -->
+
+
+      <!-- MENU ITEM -->
+      <li class="menu-item upgrade-icon jobs_pg">
+        <a class="menu-item-link text-tooltip-tfr" href="./jobs" data-title="Jobs">
+          <svg class="menu-item-link-icon icon-overview">
+            <use xlink:href="#svg-star"></use>
+          </svg>
+        </a>
+      </li>
+      <!-- /MENU ITEM -->
+
+
+      <!-- MENU ITEM -->
+      <li class="menu-item classes_icon">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="./classes" data-title="Classes">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-overview">
+            <use xlink:href="#svg-overview"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+    </ul>
+    <!-- /MENU -->
+  </nav>
+  <!-- /NAVIGATION WIDGET -->
+
+  <!-- NAVIGATION WIDGET -->
+  <nav id="navigation-widget" class="navigation-widget navigation-widget-desktop sidebar left hidden" data-simplebar>
+    <!-- NAVIGATION WIDGET COVER -->
+    <figure class="navigation-widget-cover liquid">
+      <img src="img/cover/2.jpg" alt="cover-01">
+    </figure>
+    <!-- /NAVIGATION WIDGET COVER -->
+
+    <!-- USER SHORT DESCRIPTION -->
+    <div class="user-short-description">
+      <!-- USER SHORT DESCRIPTION AVATAR -->
+      <a class="user-short-description-avatar user-avatar medium" href="javascript:;">
+        <!-- USER AVATAR BORDER -->
+        <div class="user-avatar-border">
+          <!-- HEXAGON -->
+          <div class="hexagon-120-132"></div>
+          <!-- /HEXAGON -->
+        </div>
+        <!-- /USER AVATAR BORDER -->
+
+        <!-- USER AVATAR CONTENT -->
+        <div class="user-avatar-content">
+          <!-- HEXAGON -->
+          <img class="avatar_big" id="avatar_big" src="img/avatar/1.png" alt="" height="80" width="80">
+          <!-- /HEXAGON -->
+        </div>
+        <!-- /USER AVATAR CONTENT -->
+
+      </a>
+      <!-- /USER SHORT DESCRIPTION AVATAR -->
+
+      <!-- USER SHORT DESCRIPTION TITLE -->
+      <p class="user-short-description-title" style="font-size:1.5rem"><a href="#" id="acc_name">Hello</a></p>
+      <!-- /USER SHORT DESCRIPTION TITLE -->
+
+      <!-- USER SHORT DESCRIPTION TEXT -->
+      <p class="user-short-description-text" style="font-size:0.8rem"><a href="#" id="acc_type">Student</a></p>
+      <!-- /USER SHORT DESCRIPTION TEXT -->
+    </div>
+    <!-- /USER SHORT DESCRIPTION -->
+
+
+    <!-- USER STATS -->
+    <div class="user-stats">
+      <!-- USER STAT -->
+      <div class="user-stat">
+        <!-- USER STAT TITLE -->
+        <p class="user-stat-title" id="acc_posts">0</p>
+        <!-- /USER STAT TITLE -->
+
+        <!-- USER STAT TEXT -->
+        <p class="user-stat-text">posts</p>
+        <!-- /USER STAT TEXT -->
+      </div>
+      <!-- /USER STAT -->
+
+      <!-- USER STAT -->
+      <div class="user-stat">
+        <!-- USER STAT TITLE -->
+        <p class="user-stat-title" id="acc_likes">0</p>
+        <!-- /USER STAT TITLE -->
+
+        <!-- USER STAT TEXT -->
+        <p class="user-stat-text">Likes</p>
+        <!-- /USER STAT TEXT -->
+      </div>
+      <!-- /USER STAT -->
+
+
+    </div>
+    <!-- /USER STATS -->
+
+    <!-- MENU -->
+    <ul class="menu">
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="./message-center">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-newsfeed">
+            <use xlink:href="#svg-newsfeed"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Message Center
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="./community">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-forums"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Community
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="./my-posts">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-group"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          My Posts
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item active">
+        <a class="menu-item-link" href="./support">
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-ticket"></use>
+          </svg>
+          Support Portal
+        </a>
+      </li>
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <a class="menu-item-link" href="./upgrade">
+          <svg class="menu-item-link-icon icon-overview">
+            <use xlink:href="#svg-item"></use>
+          </svg>
+          Upgrade
+        </a>
+      </li>
+
+
+      <!-- MENU ITEM -->
+      <li class="menu-item jobs_pg">
+        <a class="menu-item-link" href="./jobs">
+          <svg class="menu-item-link-icon icon-overview">
+            <use xlink:href="#svg-star"></use>
+          </svg>
+          Jobs
+        </a>
+      </li>
+
+      <!-- MENU ITEM -->
+      <li class="menu-item classes_icon">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="./classes">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-overview">
+            <use xlink:href="#svg-overview"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Classes
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+
+    </ul>
+    <!-- /MENU -->
+  </nav>
+  <!-- /NAVIGATION WIDGET -->
+
+  <!-- NAVIGATION WIDGET -->
+  <nav id="navigation-widget-mobile" class="navigation-widget navigation-widget-mobile sidebar left hidden"
+    data-simplebar>
+    <!-- NAVIGATION WIDGET CLOSE BUTTON -->
+    <div class="navigation-widget-close-button">
+      <!-- NAVIGATION WIDGET CLOSE BUTTON ICON -->
+      <svg class="navigation-widget-close-button-icon icon-back-arrow">
+        <use xlink:href="#svg-back-arrow"></use>
+      </svg>
+      <!-- NAVIGATION WIDGET CLOSE BUTTON ICON -->
+    </div>
+    <!-- /NAVIGATION WIDGET CLOSE BUTTON -->
+
+    <!-- NAVIGATION WIDGET INFO WRAP -->
+    <div class="navigation-widget-info-wrap">
+      <!-- NAVIGATION WIDGET INFO -->
+      <div class="navigation-widget-info">
+        <!-- USER AVATAR -->
+        <a class="user-avatar small no-outline" href="javascript:;">
+          <!-- USER AVATAR CONTENT -->
+          <div class="user-avatar-content">
+            <!-- HEXAGON -->
+            <img class="avatar_mob" id="avatar_mob" src="">
+            <!-- /HEXAGON -->
+          </div>
+          <!-- /USER AVATAR CONTENT -->
+
+
+        </a>
+        <!-- /USER AVATAR -->
+
+        <!-- NAVIGATION WIDGET INFO TITLE -->
+        <p class="navigation-widget-info-title" id="acc_name_mob"><a href="javascript:;">Hi Students!</a></p>
+        <!-- /NAVIGATION WIDGET INFO TITLE -->
+
+        <!-- NAVIGATION WIDGET INFO TEXT -->
+        <p class="navigation-widget-info-text">Welcome Back!</p>
+        <!-- /NAVIGATION WIDGET INFO TEXT -->
+      </div>
+      <!-- /NAVIGATION WIDGET INFO -->
+
+      <!-- NAVIGATION WIDGET BUTTON -->
+      <p class="navigation-widget-info-button button small secondary signout_btn" onclick="tci_logout()">Logout</p>
+      <!-- /NAVIGATION WIDGET BUTTON -->
+    </div>
+    <!-- /NAVIGATION WIDGET INFO WRAP -->
+
+    <!-- NAVIGATION WIDGET SECTION TITLE -->
+    <p class="navigation-widget-section-title">Sections</p>
+    <!-- /NAVIGATION WIDGET SECTION TITLE -->
+
+    <!-- MENU -->
+    <ul class="menu">
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="./message-center">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-newsfeed">
+            <use xlink:href="#svg-newsfeed"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Message Center
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="./community">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-forums"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Community
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="./my-posts">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-group"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          My Posts
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item active">
+        <a class="menu-item-link" href="./support">
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-ticket"></use>
+          </svg>
+          Support Portal
+        </a>
+      </li>
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <a class="menu-item-link" href="./upgrade">
+          <svg class="menu-item-link-icon icon-overview">
+            <use xlink:href="#svg-item"></use>
+          </svg>
+          Upgrade
+        </a>
+      </li>
+
+
+      <!-- MENU ITEM -->
+      <li class="menu-item jobs_pg">
+        <a class="menu-item-link" href="./jobs">
+          <svg class="menu-item-link-icon icon-overview">
+            <use xlink:href="#svg-star"></use>
+          </svg>
+          Jobs
+        </a>
+      </li>
+
+      <!-- MENU ITEM -->
+      <li class="menu-item classes_icon">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="./classes">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-group">
+            <use xlink:href="#svg-overview"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Classes
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+
+    </ul>
+    <!-- /MENU -->
+
+    <!-- NAVIGATION WIDGET SECTION TITLE -->
+    <p class="navigation-widget-section-title">My Profile</p>
+    <!-- /NAVIGATION WIDGET SECTION TITLE -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="./profile">Profile Info</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+  </nav>
+  <!-- /NAVIGATION WIDGET -->
+
+  <!-- CHAT WIDGET -->
+  <aside id="chat-widget-message" class="chat-widget chat-widget-overlay hidden sidebar right">
+    <!-- CHAT WIDGET HEADER -->
+    <div class="chat-widget-header">
+      <!-- CHAT WIDGET CLOSE BUTTON -->
+      <div class="chat-widget-close-button">
+        <!-- CHAT WIDGET CLOSE BUTTON ICON -->
+        <svg class="chat-widget-close-button-icon icon-back-arrow">
+          <use xlink:href="#svg-back-arrow"></use>
+        </svg>
+        <!-- CHAT WIDGET CLOSE BUTTON ICON -->
+      </div>
+      <!-- /CHAT WIDGET CLOSE BUTTON -->
+
+      <!-- USER STATUS -->
+      <div class="user-status">
+        <!-- USER STATUS AVATAR -->
+        <div class="user-status-avatar">
+          <!-- USER AVATAR -->
+          <div class="user-avatar small no-outline online">
+            <!-- USER AVATAR CONTENT -->
+            <div class="user-avatar-content">
+              <!-- HEXAGON -->
+              <!-- <div class="hexagon-image-30-32" data-src="img/avatar/03.jpg waste"></div> -->
+              <!-- /HEXAGON -->
+            </div>
+            <!-- /USER AVATAR CONTENT -->
+
+
+
+            <!-- USER AVATAR BADGE -->
+            <div class="user-avatar-badge">
+              <!-- USER AVATAR BADGE BORDER -->
+              <div class="user-avatar-badge-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-22-24"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR BADGE BORDER -->
+
+              <!-- USER AVATAR BADGE CONTENT -->
+              <div class="user-avatar-badge-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-dark-16-18"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR BADGE CONTENT -->
+
+              <!-- USER AVATAR BADGE TEXT -->
+              <p class="user-avatar-badge-text">16</p>
+              <!-- /USER AVATAR BADGE TEXT -->
+            </div>
+            <!-- /USER AVATAR BADGE -->
+          </div>
+          <!-- /USER AVATAR -->
+        </div>
+        <!-- /USER STATUS AVATAR -->
+
+        <!-- USER STATUS TITLE -->
+        <p class="user-status-title"><span class="bold">Nick Grissom</span></p>
+        <!-- /USER STATUS TITLE -->
+
+        <!-- USER STATUS TAG -->
+        <p class="user-status-tag online">Online</p>
+        <!-- /USER STATUS TAG -->
+      </div>
+      <!-- /USER STATUS -->
+    </div>
+    <!-- /CHAT WIDGET HEADER -->
+
+
+
+    <!-- CHAT WIDGET FORM -->
+    <form class="chat-widget-form">
+      <!-- INTERACTIVE INPUT -->
+      <div class="interactive-input small">
+        <input type="text" id="chat-widget-message-text" name="chat_widget_message_text"
+          placeholder="Write a message...">
+        <!-- INTERACTIVE INPUT ICON WRAP -->
+        <div class="interactive-input-icon-wrap">
+          <!-- INTERACTIVE INPUT ICON -->
+          <svg class="interactive-input-icon icon-send-message">
+            <use xlink:href="#svg-send-message"></use>
+          </svg>
+          <!-- /INTERACTIVE INPUT ICON -->
+        </div>
+        <!-- /INTERACTIVE INPUT ICON WRAP -->
+
+        <!-- INTERACTIVE INPUT ACTION -->
+        <div class="interactive-input-action">
+          <!-- INTERACTIVE INPUT ACTION ICON -->
+          <svg class="interactive-input-action-icon icon-cross-thin">
+            <use xlink:href="#svg-cross-thin"></use>
+          </svg>
+          <!-- /INTERACTIVE INPUT ACTION ICON -->
+        </div>
+        <!-- /INTERACTIVE INPUT ACTION -->
+      </div>
+      <!-- /INTERACTIVE INPUT -->
+    </form>
+    <!-- /CHAT WIDGET FORM -->
+  </aside>
+  <!-- /CHAT WIDGET -->
+
+  <!-- HEADER -->
+  <header class="header">
+    <!-- HEADER ACTIONS -->
+    <div class="header-actions">
+      <!-- HEADER BRAND -->
+      <div class="header-brand">
+        <!-- LOGO -->
+        <div class="logo">
+          <!-- ICON LOGO VIKINGER -->
+          <img src="./img/tci_white.png" height="50" width="50">
+          <!-- /ICON LOGO VIKINGER -->
+        </div>
+        <!-- /LOGO -->
+
+        <!-- HEADER BRAND TEXT -->
+        <h1 class="header-brand-text">Tci Students</h1>
+        <!-- /HEADER BRAND TEXT -->
+      </div>
+      <!-- /HEADER BRAND -->
+    </div>
+    <!-- /HEADER ACTIONS -->
+
+
+
+    <!-- HEADER ACTIONS -->
+    <div class="header-actions">
+      <!-- SIDEMENU TRIGGER -->
+      <div class="sidemenu-trigger navigation-widget-trigger">
+        <!-- ICON GRID -->
+        <svg class="icon-grid">
+          <use xlink:href="#svg-grid"></use>
+        </svg>
+        <!-- /ICON GRID -->
+      </div>
+      <!-- /SIDEMENU TRIGGER -->
+
+      <!-- MOBILEMENU TRIGGER -->
+      <div class="mobilemenu-trigger navigation-widget-mobile-trigger">
+        <div class="" style="color: white;">
+          <i class="fa-solid fa-star"></i>
+          <span id="Point_Value_1" style="font-weight: bold; font-size:large; padding-right: 15px;"></span>
+        </div>
+        <!-- BURGER ICON -->
+        <div class="burger-icon inverted">
+          <!-- BURGER ICON BAR -->
+          <div class="burger-icon-bar"></div>
+          <!-- /BURGER ICON BAR -->
+
+          <!-- BURGER ICON BAR -->
+          <div class="burger-icon-bar"></div>
+          <!-- /BURGER ICON BAR -->
+
+          <!-- BURGER ICON BAR -->
+          <div class="burger-icon-bar"></div>
+          <!-- /BURGER ICON BAR -->
+        </div>
+        <!-- /BURGER ICON -->
+      </div>
+      <!-- /MOBILEMENU TRIGGER -->
+
+      <!-- NAVIGATION -->
+      <nav class="navigation">
+        <!-- MENU MAIN -->
+        <ul class="menu-main" style="visibility:hidden">
+          <!-- MENU MAIN ITEM -->
+          <li class="menu-main-item">
+            <!-- MENU MAIN ITEM LINK -->
+            <a class="menu-main-item-link" href="#">Home</a>
+            <!-- /MENU MAIN ITEM LINK -->
+          </li>
+          <!-- /MENU MAIN ITEM -->
+
+          <!-- MENU MAIN ITEM -->
+          <li class="menu-main-item">
+            <!-- MENU MAIN ITEM LINK -->
+            <a class="menu-main-item-link" href="#">Careers</a>
+            <!-- /MENU MAIN ITEM LINK -->
+          </li>
+          <!-- /MENU MAIN ITEM -->
+
+          <!-- MENU MAIN ITEM -->
+          <li class="menu-main-item">
+            <!-- MENU MAIN ITEM LINK -->
+            <a class="menu-main-item-link" href="#">Faqs</a>
+            <!-- /MENU MAIN ITEM LINK -->
+          </li>
+          <!-- /MENU MAIN ITEM -->
+
+          <!-- MENU MAIN ITEM -->
+          <li class="menu-main-item">
+            <!-- MENU MAIN ITEM LINK -->
+            <p class="menu-main-item-link">
+              <!-- ICON DOTS -->
+              <svg class="icon-dots">
+                <use xlink:href="#svg-dots"></use>
+              </svg>
+              <!-- /ICON DOTS -->
+            </p>
+            <!-- /MENU MAIN ITEM LINK -->
+
+            <!-- MENU MAIN -->
+            <ul class="menu-main">
+              <!-- MENU MAIN ITEM -->
+              <li class="menu-main-item">
+                <!-- MENU MAIN ITEM LINK -->
+                <a class="menu-main-item-link" href="#">About Us</a>
+                <!-- /MENU MAIN ITEM LINK -->
+              </li>
+              <!-- /MENU MAIN ITEM -->
+
+              <!-- MENU MAIN ITEM -->
+              <li class="menu-main-item">
+                <!-- MENU MAIN ITEM LINK -->
+                <a class="menu-main-item-link" href="#">Our Blog</a>
+                <!-- /MENU MAIN ITEM LINK -->
+              </li>
+              <!-- /MENU MAIN ITEM -->
+
+              <!-- MENU MAIN ITEM -->
+              <li class="menu-main-item">
+                <!-- MENU MAIN ITEM LINK -->
+                <a class="menu-main-item-link" href="#">Contact Us</a>
+                <!-- /MENU MAIN ITEM LINK -->
+              </li>
+              <!-- /MENU MAIN ITEM -->
+
+              <!-- MENU MAIN ITEM -->
+              <li class="menu-main-item">
+                <!-- MENU MAIN ITEM LINK -->
+                <a class="menu-main-item-link" href="#">Privacy Policy</a>
+                <!-- /MENU MAIN ITEM LINK -->
+              </li>
+              <!-- /MENU MAIN ITEM -->
+            </ul>
+            <!-- /MENU MAIN -->
+          </li>
+          <!-- /MENU MAIN ITEM -->
+        </ul>
+        <!-- /MENU MAIN -->
+      </nav>
+      <!-- /NAVIGATION -->
+    </div>
+    <!-- /HEADER ACTIONS -->
+
+    <!-- HEADER ACTIONS -->
+    <div class="header-actions search-bar">
+    </div>
+    <!-- /HEADER ACTIONS -->
+
+    <!-- HEADER ACTIONS -->
+    <div class="header-actions justify-content-end align-items-centers" style="color: white;">
+      <i class="fa-solid fa-star fa-xl"></i><span class="pl-2" id="Point_Value"
+        style="font-weight:bolder; font-size: x-large;"></span>
+      <!-- ACTION ITEM WRAP -->
+      <div class="action-item-wrap">
+        <!-- ACTION ITEM -->
+        <div class="action-item dark header-settings-dropdown-trigger">
+          <!-- ACTION ITEM ICON -->
+          <svg class="action-item-icon icon-settings">
+            <use xlink:href="#svg-settings"></use>
+          </svg>
+          <!-- /ACTION ITEM ICON -->
+        </div>
+        <!-- /ACTION ITEM -->
+
+        <!-- DROPDOWN NAVIGATION -->
+        <div class="dropdown-navigation header-settings-dropdown">
+          <!-- DROPDOWN NAVIGATION HEADER -->
+          <div class="dropdown-navigation-header">
+            <!-- USER STATUS -->
+            <div class="user-status">
+              <!-- USER STATUS AVATAR -->
+
+              <!-- /USER STATUS AVATAR -->
+
+              <!-- USER STATUS TITLE -->
+              <p class="user-status-title"><span class="bold" id="acc_name2">Hello!</span></p>
+              <!-- /USER STATUS TITLE -->
+
+              <!-- USER STATUS TEXT -->
+              <p class="user-status-text small"><a href="#" id="acc_type2">Student</a></p>
+              <!-- /USER STATUS TEXT -->
+            </div>
+            <!-- /USER STATUS -->
+          </div>
+          <!-- /DROPDOWN NAVIGATION HEADER -->
+
+          <!-- DROPDOWN NAVIGATION CATEGORY -->
+          <p class="dropdown-navigation-category">My Profile</p>
+          <!-- /DROPDOWN NAVIGATION CATEGORY -->
+
+          <!-- DROPDOWN NAVIGATION LINK -->
+          <a class="dropdown-navigation-link" href="./profile">Profile Info</a>
+          <!-- /DROPDOWN NAVIGATION LINK -->
+
+
+          <!-- DROPDOWN NAVIGATION BUTTON -->
+          <p class="dropdown-navigation-button button small secondary signout_btn" onclick="tci_logout()">Logout</p>
+          <!-- /DROPDOWN NAVIGATION BUTTON -->
+        </div>
+        <!-- /DROPDOWN NAVIGATION -->
+      </div>
+      <!-- /ACTION ITEM WRAP -->
+    </div>
+    <!-- /HEADER ACTIONS -->
+  </header>
+  <!-- /HEADER -->
+
+  <!-- FLOATY BAR -->
+  <aside class="floaty-bar d-none">
+    <!-- BAR ACTIONS -->
+    <div class="bar-actions">
+      <!-- PROGRESS STAT -->
+      <div class="progress-stat">
+        <!-- BAR PROGRESS WRAP -->
+        <div class="bar-progress-wrap">
+          <!-- BAR PROGRESS INFO -->
+          <p class="bar-progress-info">Next: <span class="bar-progress-text"></span></p>
+          <!-- /BAR PROGRESS INFO -->
+        </div>
+        <!-- /BAR PROGRESS WRAP -->
+
+        <!-- PROGRESS STAT BAR -->
+        <div id="logged-user-level-cp" class="progress-stat-bar"></div>
+        <!-- /PROGRESS STAT BAR -->
+      </div>
+      <!-- /PROGRESS STAT -->
+    </div>
+    <!-- /BAR ACTIONS -->
+
+    <!-- BAR ACTIONS -->
+    <div class="bar-actions">
+      <!-- ACTION LIST -->
+      <div class="action-list dark">
+        <!-- ACTION LIST ITEM -->
+        <a class="action-list-item" href="marketplace-cart.html">
+          <!-- ACTION LIST ITEM ICON -->
+          <svg class="action-list-item-icon icon-shopping-bag">
+            <use xlink:href="#svg-shopping-bag"></use>
+          </svg>
+          <!-- /ACTION LIST ITEM ICON -->
+        </a>
+        <!-- /ACTION LIST ITEM -->
+
+        <!-- ACTION LIST ITEM -->
+        <a class="action-list-item" href="hub-profile-requests.html">
+          <!-- ACTION LIST ITEM ICON -->
+          <svg class="action-list-item-icon icon-friend">
+            <use xlink:href="#svg-friend"></use>
+          </svg>
+          <!-- /ACTION LIST ITEM ICON -->
+        </a>
+        <!-- /ACTION LIST ITEM -->
+
+        <!-- ACTION LIST ITEM -->
+        <a class="action-list-item" href="hub-profile-messages.html">
+          <!-- ACTION LIST ITEM ICON -->
+          <svg class="action-list-item-icon icon-messages">
+            <use xlink:href="#svg-messages"></use>
+          </svg>
+          <!-- /ACTION LIST ITEM ICON -->
+        </a>
+        <!-- /ACTION LIST ITEM -->
+
+        <!-- ACTION LIST ITEM -->
+        <a class="action-list-item unread" href="hub-profile-notifications.html">
+          <!-- ACTION LIST ITEM ICON -->
+          <svg class="action-list-item-icon icon-notification">
+            <use xlink:href="#svg-notification"></use>
+          </svg>
+          <!-- /ACTION LIST ITEM ICON -->
+        </a>
+        <!-- /ACTION LIST ITEM -->
+      </div>
+      <!-- /ACTION LIST -->
+
+      <!-- ACTION ITEM WRAP -->
+      <a class="action-item-wrap" href="hub-profile-info.html">
+        <!-- ACTION ITEM -->
+        <div class="action-item dark">
+          <!-- ACTION ITEM ICON -->
+          <svg class="action-item-icon icon-settings">
+            <use xlink:href="#svg-settings"></use>
+          </svg>
+          <!-- /ACTION ITEM ICON -->
+        </div>
+        <!-- /ACTION ITEM -->
+      </a>
+      <!-- /ACTION ITEM WRAP -->
+    </div>
+    <!-- /BAR ACTIONS -->
+  </aside>
+  <!-- /FLOATY BAR -->
+
+  <!-- CONTENT GRID -->
+  <div class="content-grid">
+    <!-- SECTION BANNER -->
+    <!-- <div class="section-banner"> -->
+    <!-- SECTION BANNER ICON -->
+    <!-- <img class="section-banner-icon" src="https://tcistudents.com/img/banner/marketplace-icon.png"
+        alt="marketplace-icon"> -->
+    <!-- /SECTION BANNER ICON -->
+
+    <!-- SECTION BANNER TITLE -->
+    <!-- <p class="section-banner-title">TCI Support</p> -->
+    <!-- /SECTION BANNER TITLE -->
+
+    <!-- SECTION BANNER TEXT -->
+    <!-- <p class="section-banner-text weight-700">Your Doubts/Issues are our Responsibility</p> -->
+    <!-- /SECTION BANNER TEXT -->
+    <!-- </div> -->
+    <!-- /SECTION BANNER -->
+
+    <!-- SECTION HEADER -->
+    <!-- <div class="section-header"> -->
+    <!-- SECTION HEADER INFO -->
+    <!-- <div class="section-header-info"> -->
+    <!-- SECTION PRETITLE -->
+    <!-- <p class="section-pretitle">Check ticket status and more</p> -->
+    <!-- /SECTION PRETITLE -->
+
+    <!-- SECTION TITLE -->
+    <!-- <h2 class="section-title">My Tickets</h2> -->
+    <!-- /SECTION TITLE -->
+    <!-- </div> -->
+    <!-- /SECTION HEADER INFO -->
+
+    <!-- </div> -->
+    <!-- /SECTION HEADER -->
+
+    <div class="Quiz">
+      <div class="col widget-box my-3" id="Quiz_ID">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- /CONTENT GRID -->
+
+  <!-- app -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https:tcistudents.com/js/utils/app.js"></script>
+  <!-- page loader -->
+  <script src="https:tcistudents.com/js/utils/page-loader.js"></script>
+  <!-- simplebar -->
+  <script src="https:tcistudents.com/js/vendor/simplebar.min.js"></script>
+  <!-- liquidify -->
+  <script src="https:tcistudents.com/js/utils/liquidify.js"></script>
+  <!-- XM_Plugins -->
+  <script src="https:tcistudents.com/js/vendor/xm_plugins.min.js"></script>
+  <!-- global.hexagons -->
+  <script src="https:tcistudents.com/js/global/global.hexagons.js"></script>
+  <!-- global.tooltips -->
+  <script src="https:tcistudents.com/js/global/global.tooltips.js"></script>
+  <!-- global.accordions -->
+  <script src="https:tcistudents.com/js/global/global.accordions.js"></script>
+  <!-- header -->
+  <script src="https:tcistudents.com/js/header/header.js"></script>
+  <!-- sidebar -->
+  <script src="https:tcistudents.com/js/sidebar/sidebar.js"></script>
+  <!-- form.utils -->
+  <script src="https:tcistudents.com/js/form/form.utils.js"></script>
+  <!-- SVG icons -->
+  <script src="https:tcistudents.com/js/utils/svg-loader.js"></script>
+  <!-- Sw Registrar -->
+  <script src="https:tcistudents.com/js/notification_sw.js"> </script>
+  <!-- Quiz Cal -->
+  <script src="js/quiz.js"></script>
+
+  <script>
+    function signOut() {
+      var auth2 = gapi.auth2.getAuthInstance();
+      auth2.signOut().then(function () {
+        console.log('User signed out.');
+      });
+    }
+
+    function onLoad() {
+      gapi.load('auth2', function () {
+        gapi.auth2.init();
+      });
+    }
+  </script>
+  <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+
+
+  <script>
+    // cookie fndef script
+    api_url = ""
+    api_supp_url = "/ticket"
+    root = "/"
+
+    function setCookie(cname, cvalue, exdays) {
+      const d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      let expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      let name = cname + "=";
+      let ca = document.cookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    function checkCookie(name) {
+      let user = getCookie(name);
+      if (user != "") { return true }
+      else { return false }
+    }
+
+    rmCookie = (name) => { document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; }
+
+    const keep_alive = () => {
+      api_session_url = "/sessionsApi"
+      let email = getCookie("user")
+      let s_id = getCookie("session_id")
+      $.post(api_session_url + "/keep_alive", { email: email, s_id: s_id }, function (data, status) {
+        if (data == "Y") { }
+        else if (data == "N") {
+          console.log("2x lg Detected")
+          tci_logout()
+        }
+        else { }
+      })
+    }
+
+    tci_logout = () => {
+      api_session_url = "/sessionsApi"
+      let email = getCookie("user")
+      rmCookie("user")
+      signOut()
+      localStorage.clear();
+      document.cookie.split(";").forEach(function (c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+      $.post(api_session_url + "/logout_session", { email: email }, function (data, status) {
+      })
+      window.location.replace(root)
+    }
+
+    refresh = () => {
+      if (checkCookie("user")) { }
+      else {
+        window.location.replace(root);
+      }
+    }
+  </script>
+
+
+
+  <script type="text/javascript">
+
+
+    function linkify(text) {
+      if (text == "" || text == undefined) { return "" }
+      var urlRegex = /(https?:\/\/[^\s]+)/g;
+      return text.replace(urlRegex, function (url) {
+        return '<a class="linkified_a" href="' + url + '" target="_blank">' + url + '</a>';
+      })
+      // or alternatively
+      // return text.replace(urlRegex, '<a href="$1">$1</a>')
+    }
+
+
+    redirect = (link) => { window.location.href = link }
+
+    detect_acc_type = () => {
+      let email = getCookie("user")
+      $.post(api_url + "/detect_user", { email: email }, function (data, status) {
+        if (data == "foundation") {
+          global_course = data
+          $(".jobs_pg").hide()
+          $("#acc_type,#acc_type2").html("<i class='fas fa-graduation-cap'></i> Foundation Course")
+          // setTimeout(update_course,3000)
+        }
+        else if (data == "pro partial") {
+          global_course = data
+          $(".jobs_pg").hide()
+          $("#acc_type,#acc_type2").html("<i class='fas fa-graduation-cap'></i> Pro Mentorship")
+          // setTimeout(update_course,3000)
+        }
+        else if (data == "pro full") {
+          global_course = data
+          $("#acc_type,#acc_type2").html("<i class='fas fa-graduation-cap'></i> Pro Mentorship")
+          // setTimeout(update_course,3000)
+        }
+        else { $(".jobs_pg").hide() }
+      })
+    }
+
+    get_stats = () => {
+      let email = getCookie("user")
+      $.post(api_url + "/user_stats", { email: email }, function (data, status) {
+        console.log(data)
+        data = eval(data)
+        $("#acc_posts").text(data[0])
+        $("#acc_likes").text(data[1])
+      })
+    }
+
+    get_avatar = () => {
+      let email = getCookie("user")
+      $.post(api_url + "/get_avatar", { email: email }, function (data, status) {
+        data = data[0]
+        $("#avatar_big,#avatar_small,#avatar_mob").attr("src", data[0])
+        if (data[1] == "0" || data[1] == "") {
+          data[1] = "Student"
+        }
+        $("#acc_name").text(data[1])
+        $("#acc_name2,#acc_name_mob").text("Hi " + data[1])
+      })
+    }
+
+    $(document).ready(function () {
+
+
+      console.log("Ready!")
+      // $(".classes_icon").hide()
+
+
+      //first api call
+      let email = getCookie("user")
+
+
+
+
+      //detect_acc_type()
+      //refresh()
+
+      //get_stats()
+      //get_avatar()
+
+
+    });
+  </script>
+
+</body>
+
+</html>
